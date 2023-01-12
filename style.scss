@@ -9,17 +9,6 @@
 @import "assets/scss/config/global";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
-:root {
-  --pink: #ff74a4;
-  --violet: #9f6ea3;
-  --lightblack: #515C6F;
-  --white: #ffffff;
-  --darkwhite: #cecaca;
-  --pinkshadow: #ffcbdd;
-  --lightbshadow: rgba(0, 0, 0, 0.15);
-}
-
 .app-author {
   position: fixed;
   bottom: 30px;
@@ -97,8 +86,6 @@
           font-weight: var(--fw-500);
         }
       }
-
-
     }
   }
 }
