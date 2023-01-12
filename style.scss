@@ -1,0 +1,104 @@
+@import "assets/scss/config/fonts";
+@import "assets/scss/config/reset";
+@import "assets/scss/config/vars";
+@import "assets/scss/config/utility";
+@import "assets/scss/modules/typography";
+@import "assets/scss/modules/fields";
+@import "assets/scss/modules/buttons";
+@import "assets/scss/modules/toast";
+@import "assets/scss/config/global";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root {
+  --pink: #ff74a4;
+  --violet: #9f6ea3;
+  --lightblack: #515C6F;
+  --white: #ffffff;
+  --darkwhite: #cecaca;
+  --pinkshadow: #ffcbdd;
+  --lightbshadow: rgba(0, 0, 0, 0.15);
+}
+
+.app-author {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.app-container {
+  --gap: 15px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--bcs-grey-3);
+  padding: 10px;
+}
+
+.converter {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  gap: var(--gap);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 0 25px 35px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+
+  form {
+    gap: var(--gap);
+  }
+
+  .content {
+    display: grid;
+    gap: var(--gap);
+  }
+
+  .result {
+    display: grid;
+    gap: var(--gap);
+    text-align: left;
+
+    div {
+      display: grid;
+      gap: var(--gap);
+
+      @media (min-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    ul {
+      grid-column: 1/-1;
+      display: grid;
+      gap: var(--gap);
+
+      li {
+        display: grid;
+        gap: var(--gap);
+
+        @media (min-width: 576px) {
+          grid-template-columns: auto auto 180px;
+        }
+      }
+
+      p {
+        display: grid;
+        gap: 5px;
+
+        span {
+          font-weight: var(--fw-500);
+        }
+      }
+
+
+    }
+  }
+}
